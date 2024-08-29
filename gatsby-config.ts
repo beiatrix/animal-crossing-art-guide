@@ -1,5 +1,9 @@
 import type { GatsbyConfig } from "gatsby";
 
+require("dotenv").config({
+  path: '.env',
+});
+
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Animal Crossing Art Guide`,
@@ -12,8 +16,8 @@ const config: GatsbyConfig = {
   plugins: [{
     resolve: 'gatsby-source-contentful',
     options: {
-      "accessToken": "",
-      "spaceId": ""
+      accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      spaceId: process.env.CONTENTFUL_SPACE_ID
     }
   }, "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-postcss", {
     resolve: 'gatsby-source-filesystem',
