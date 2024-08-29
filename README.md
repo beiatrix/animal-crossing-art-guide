@@ -1,49 +1,30 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal TypeScript Starter
-</h1>
 
-## 🚀 Quick start
+# Animal Crossing Art Guide 
 
-1.  **Create a Gatsby site.**
+> **The ✨definitive✨ guide to Redd's real vs fake art! 🦊 🧐 🦉 🖼️ 👩🏻‍🎨**
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+### Built with... 💪😮‍💨
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby -- -ts
-    ```
+- React
+- Gatsby
+- GraphQL
+- Tailwind
+- Contentful
 
-2.  **Start developing.**
 
-    Navigate into your new site’s directory and start it up.
+### Development 🚀
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+```shell
+yarn dev
+```
 
-3.  **Open the code and start customizing!**
+The site runs locally at http://localhost:8000 
 
-    Your site is now running at http://localhost:8000!
 
-    Edit `src/pages/index.tsx` to see your site update in real-time!
+### Sources 👩🏻‍🏫
 
-4.  **Learn more**
+> - [IGN - Redd Art Guide](https://www.ign.com/wikis/animal-crossing-new-horizons/Redd_Art_Guide:_Real_and_Fake_Paintings_and_Sculptures)
+> - [Polygon - Animal Crossing Guide](https://www.polygon.com/animal-crossing-new-horizons-switch-acnh-guide/2020/4/23/21231433/redd-jolly-museum-art-fake-real-forgeries-list-complete-painting-statue)
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+*This is a fan site intended for informational and entertainment purposes only, and is not affiliated with Nintendo or Animal Crossing.*
 
-## 🚀 Quick start (Netlify)
-
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
-
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
