@@ -1,3 +1,4 @@
+// gatsby
 import { graphql, useStaticQuery } from "gatsby"
 
 export const useSiteMetadata = () => {
@@ -7,7 +8,6 @@ export const useSiteMetadata = () => {
         siteMetadata {
           title
           description
-          image
           siteUrl
         }
       }

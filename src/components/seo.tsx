@@ -1,5 +1,8 @@
-import React from 'react'
-import { useSiteMetadata } from '@/hooks/use-site-metadata'
+// react
+import React from "react"
+
+// hooks
+import { useSiteMetadata } from "@/hooks/use-site-metadata"
 
 export const SEO = () => {
   const { title, description, siteUrl } = useSiteMetadata()
