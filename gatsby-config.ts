@@ -7,6 +7,7 @@ require("dotenv").config({
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Animal Crossing Art Guide`,
+    description: `The ✨definitive✨ guide to Redd's real vs fake art! 🦊 🧐 🦉 🖼️ 👩🏻‍🎨`,
     siteUrl: `https://animal-crossing-art-guide.netlify.app/`
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
@@ -51,6 +52,15 @@ const config: GatsbyConfig = {
         crossOrigin: `use-credentials`,
       },
     },
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "@": "src",
+        },
+        extensions: ["js", "jsx", "ts", "tsx"]
+      }
+    }
   ]
 };
 
