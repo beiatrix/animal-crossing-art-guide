@@ -61,7 +61,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
   return (
     <main>
-      <div className="bg-green-1 p-12 min-h-screen">
+      <div className="bg-green-1 p-12 md:p-16 lg:p-20 min-h-screen">
         <Header />
         <Search 
           searchText={searchText}

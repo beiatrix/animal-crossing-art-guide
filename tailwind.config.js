@@ -6,17 +6,12 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ['Karla', 'sans-serif'],
+      sans: ['Work Sans', 'sans-serif'],
       serif: ['Libre Baskerville', 'serif'],
-      poppins: ['Poppins', 'sans-serif'],
+      poppins: ['Poppins', 'sans-serif']
     },
     extend: {
       colors: {
-        'neutral-1': '#EDEDE9',
-        'neutral-2': '#D6CCC2',
-        'neutral-3': '#F5EBE0',
-        'neutral-4': '#E3D5CA',
-        'neutral-5': '#D5BDAF',
         'green-1': '#D8F3DC',
         'green-2': '#B7E4C7',
         'green-3': '#95D5B2',
@@ -25,7 +20,12 @@ module.exports = {
         'green-6': '#40916C',
         'green-7': '#2D6A4F',
         'green-8': '#1B4332',
-        'green-9': '#081C15'
+        'green-9': '#081C15',
+        'neutral-1': '#EDEDE9',
+        'neutral-2': '#D6CCC2',
+        'neutral-3': '#F5EBE0',
+        'neutral-4': '#E3D5CA',
+        'neutral-5': '#D5BDAF'
       }
     },
   },

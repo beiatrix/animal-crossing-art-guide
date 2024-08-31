@@ -65,9 +65,9 @@ const config: GatsbyConfig = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
+          `Libre Baskerville`,
           `Poppins`,
-          `Karla`,
-          `Libre Baskerville`
+          `Work Sans`
         ],
         display: 'swap'
       }
