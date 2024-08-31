@@ -33,7 +33,7 @@ const Search = ({ searchText, setSearchText }: SearchProps) => {
           value={searchText}
           type="text"
           placeholder="Search..."
-          className={`transform transition-all duration-300 ease-out p-3 px-5 rounded-full border border-green-2 text-green-8 placeholder-green-4 focus:outline-none ${
+          className={`transform transition-all duration-300 ease-out p-3 px-5 rounded-full border border-green-2 text-green-8 placeholder-green-3 focus:outline-none ${
             isOpen ? 'scale-100 opacity-100 w-64' : 'scale-75 opacity-0 w-0'
           }`}
           style={{ width: isOpen ? '16rem' : '0' }}

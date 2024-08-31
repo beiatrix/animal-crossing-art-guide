@@ -4,6 +4,9 @@ import React, { useState } from 'react'
 // types
 import type { Art } from "@/types/art"
 
+// components
+import ArtCard from "@/components/ArtCard"
+
 interface TabProps {
   paintings: Art[]
   sculptures: Art[]
@@ -36,20 +39,24 @@ const Tab = ({ paintings, sculptures }: TabProps) => {
       <div className="p-4 rounded-3xl bg-green-2">
         {activeTab === 0 && (
           <div>
-            {paintings.map((node: Art) => (
-              <div className="text-4xl font-bold font-serif text-green-7">
-                {node.title}
-              </div>
-            ))}
+            {
+              paintings.length
+                ? paintings.map((node: Art) => (
+                  <ArtCard art={node} />
+                ))
+                : <div className="p-6 text-center text-green-6">No paintings found 😓</div>
+            }
           </div>
         )}
         {activeTab === 1 && (
           <div>
-            {sculptures.map((node: Art) => (
-              <div className="text-4xl font-bold font-serif text-green-7">
-                {node.title}
-              </div>
-            ))}
+            {
+              sculptures.length
+                ? sculptures.map((node: Art) => (
+                  <ArtCard art={node} />
+                ))
+                : <div className="p-6 text-center text-green-6">No statues found 😓</div>
+            }
           </div>
         )}
       </div>
