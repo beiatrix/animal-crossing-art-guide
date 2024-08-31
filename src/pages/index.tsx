@@ -42,8 +42,8 @@ const IndexPage: React.FC<PageProps> = () => {
     return node.kind === 'Painting'
   })
   
-  const sculptures = data.allContentfulArt.nodes.filter((node: Art) => {
-    return node.kind === 'Sculpture'
+  const statues = data.allContentfulArt.nodes.filter((node: Art) => {
+    return node.kind === 'Statue'
   })
 
   /**
@@ -55,8 +55,8 @@ const IndexPage: React.FC<PageProps> = () => {
     return painting.title.toLowerCase().startsWith(searchText.toLowerCase())
   })
   
-  const filteredSculptures = sculptures.filter((sculpture: Art) => {
-    return sculpture.title.toLowerCase().startsWith(searchText.toLowerCase())
+  const filteredStatues = statues.filter((statue: Art) => {
+    return statue.title.toLowerCase().startsWith(searchText.toLowerCase())
   })
 
   return (
@@ -69,7 +69,7 @@ const IndexPage: React.FC<PageProps> = () => {
         />
         <Tabs
           paintings={filteredPaintings}
-          sculptures={filteredSculptures}
+          statues={filteredStatues}
         />
       </div>
     </main>

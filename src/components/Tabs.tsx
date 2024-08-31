@@ -9,10 +9,10 @@ import ArtCard from "@/components/ArtCard"
 
 interface TabProps {
   paintings: Art[]
-  sculptures: Art[]
+  statues: Art[]
 }
 
-const Tab = ({ paintings, sculptures }: TabProps) => {
+const Tab = ({ paintings, statues }: TabProps) => {
   const [activeTab, setActiveTab] = useState(0)
 
   return (
@@ -51,8 +51,8 @@ const Tab = ({ paintings, sculptures }: TabProps) => {
         {activeTab === 1 && (
           <div>
             {
-              sculptures.length
-                ? sculptures.map((node: Art) => (
+              statues.length
+                ? statues.map((node: Art) => (
                   <ArtCard art={node} />
                 ))
                 : <div className="p-6 text-center text-green-6">No statues found 😓</div>
