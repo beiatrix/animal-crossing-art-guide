@@ -60,6 +60,17 @@ const config: GatsbyConfig = {
         },
         extensions: ["js", "jsx", "ts", "tsx"]
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Poppins`,
+          `Karla`,
+          `Libre Baskerville`
+        ],
+        display: 'swap'
+      }
     }
   ]
 };
