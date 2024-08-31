@@ -1,7 +1,7 @@
 import React from "react"
 
 const Header = () => (
-  <header className="pb-6 text-center">
+  <header className="pb-8 text-center">
     <h1 className="pb-6 text-6xl text-green-8 font-bold">
       Animal Crossing Art Guide  
     </h1>
