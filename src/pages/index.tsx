@@ -14,11 +14,13 @@ import type { Art } from '@/types/art'
 
 // components
 import { SEO } from "@/components/seo"
+import Header from "@/components/Header"
+import Tabs from "@/components/Tabs"
 
 const IndexPage: React.FC<PageProps> = () => {
   const data = useStaticQuery(graphql`
     query MyQuery {
-      allContentfulArt {
+      allContentfulArt(sort: {title: ASC}) {
         nodes {
           title
           alwaysReal
@@ -42,27 +44,12 @@ const IndexPage: React.FC<PageProps> = () => {
 
   return (
     <main>
-      <div className="bg-neutral-1 min-h-screen">
-        <header className="p-12 text-center">
-          <h1 className="text-6xl text-darkgreen font-bold">
-            Animal Crossing Art Guide  
-          </h1>
-          <h2 className="text-xl py-3 text-earth-4">
-            The definitive guide to Redd's real vs fake art! 🦊 🖼️ 🧐
-          </h2>
-        </header>
-        <div className="px-24 flex">
-          <div className="w-1/2 text-center">
-            {paintings.map((node: Art) => (
-              <div>{node.title}</div>
-            ))}
-          </div>
-          <div className="w-1/2 text-center">
-            {sculptures.map((node: Art) => (
-              <div>{node.title}</div>
-            ))}
-          </div>
-        </div>
+      <div className="bg-green-1 p-12 min-h-screen">
+        <Header />
+        <Tabs
+          paintings={paintings}
+          sculptures={sculptures}
+        />
       </div>
     </main>
   )
