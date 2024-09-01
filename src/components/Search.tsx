@@ -25,6 +25,21 @@ const Search = ({ searchText, setSearchText }: SearchProps) => {
     }
   }, [wrapperRef])
 
+  // Open the search bar with Command + K (or Ctrl + K)
+  useEffect(() => {
+    function handleKeyDown(event) {
+      if ((event.metaKey || event.ctrlKey) && event.key === 'k') {
+        event.preventDefault();
+        setIsOpen(true);
+      }
+    }
+
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
+  
   return (
     <div className="fixed bottom-6 right-6" ref={wrapperRef}>
       <div className="flex items-center space-x-2">
