@@ -3,6 +3,9 @@
 
 > **The ✨definitive✨ guide to Redd's real vs fake art! 🦊 🧐 🦉 🖼️ 👩🏻‍🎨**
 
+![Animal Crossing Art Guide](https://beiatrix.s3.us-west-1.amazonaws.com/projects/animal-crossing-art-guide/animal-crossing-art-guide.gif)
+
+
 ### Built with... 💪😮‍💨
 
 - React
