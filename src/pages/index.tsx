@@ -33,6 +33,12 @@ const IndexPage: React.FC<PageProps> = () => {
           description {
             description
           }
+          fakeImage {
+            gatsbyImageData
+          }
+          realImage { 
+            gatsbyImageData
+          }
         }
       }
     }

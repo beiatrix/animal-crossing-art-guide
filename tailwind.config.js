@@ -20,12 +20,7 @@ module.exports = {
         'green-6': '#40916C',
         'green-7': '#2D6A4F',
         'green-8': '#1B4332',
-        'green-9': '#081C15',
-        'neutral-1': '#EDEDE9',
-        'neutral-2': '#D6CCC2',
-        'neutral-3': '#F5EBE0',
-        'neutral-4': '#E3D5CA',
-        'neutral-5': '#D5BDAF'
+        'green-9': '#081C15'
       }
     },
   },

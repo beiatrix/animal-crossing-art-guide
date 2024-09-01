@@ -16,7 +16,7 @@ const Tab = ({ paintings, statues }: TabProps) => {
   const [activeTab, setActiveTab] = useState(0)
 
   return (
-    <div className="w-100 sm:w-4/5 lg:w-2/3 mx-auto my-4">
+    <div className="w-100 sm:w-4/5 lg:w-2/3 xl:w-1/2 mx-auto my-4">
       <div className="flex justify-center">
         <button
           onClick={() => setActiveTab(0)}
