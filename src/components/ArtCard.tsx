@@ -21,7 +21,7 @@ const ArtCard = ({ art }: ArtCardProps) => {
   }
 
   return (
-    <div className="p-6">
+    <div className="p-3 md:p-6">
       <h1 className="text-4xl md:text-5xl font-bold text-green-8 pb-4">
         {art.title}
       </h1>

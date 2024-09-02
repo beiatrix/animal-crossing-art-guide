@@ -20,7 +20,7 @@ const Tab = ({ paintings, statues }: TabProps) => {
       <div className="flex justify-center">
         <button
           onClick={() => setActiveTab(0)}
-          className={`px-4 py-4 mx-2 w-5/12 font-bold font-poppins underline text-2xl rounded-t-3xl transition-colors duration-50 ${
+          className={`px-4 py-4 mx-2 w-5/12 font-bold font-poppins underline text-lg md:text-2xl rounded-t-3xl transition-colors duration-50 ${
             activeTab === 0 ? 'bg-green-2 text-green-7' : 'bg-green-3 text-green-1'
           }`}
         >
@@ -28,7 +28,7 @@ const Tab = ({ paintings, statues }: TabProps) => {
         </button>
         <button
           onClick={() => setActiveTab(1)}
-          className={`px-4 py-4 mx-2 w-5/12 font-bold font-poppins underline text-2xl rounded-t-3xl transition-colors duration-50 ${
+          className={`px-4 py-4 mx-2 w-5/12 font-bold font-poppins underline text-lg md:text-2xl rounded-t-3xl transition-colors duration-50 ${
             activeTab === 1 ? 'bg-green-2 text-green-7' : 'bg-green-3 text-green-1'
           }`}
         >
