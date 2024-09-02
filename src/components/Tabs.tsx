@@ -42,7 +42,10 @@ const Tab = ({ paintings, statues }: TabProps) => {
             {
               paintings.length
                 ? paintings.map((node: Art) => (
-                  <ArtCard art={node} />
+                  <ArtCard
+                    key={node.title}
+                    art={node}
+                  />
                 ))
                 : <div className="p-6 text-center text-green-6">No paintings found 😓</div>
             }
@@ -53,7 +56,10 @@ const Tab = ({ paintings, statues }: TabProps) => {
             {
               statues.length
                 ? statues.map((node: Art) => (
-                  <ArtCard art={node} />
+                  <ArtCard
+                    key={node.title}
+                    art={node}
+                  />
                 ))
                 : <div className="p-6 text-center text-green-6">No statues found 😓</div>
             }
