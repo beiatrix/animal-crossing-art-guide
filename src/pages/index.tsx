@@ -16,6 +16,7 @@ import type { Art } from '@/types/art'
 import { SEO } from "@/components/seo"
 import Header from "@/components/Header"
 import Search from "@/components/Search"
+import Signature from "@/components/Signature"
 import Tabs from "@/components/Tabs"
 
 const IndexPage: React.FC<PageProps> = () => {
@@ -77,6 +78,7 @@ const IndexPage: React.FC<PageProps> = () => {
           paintings={filteredPaintings}
           statues={filteredStatues}
         />
+        <Signature />
       </div>
     </main>
   )
